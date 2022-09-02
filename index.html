@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RP Engenharia</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --dark-blue: #0d436f;
+        --light-blue: #add8e6;
+      }
+
+      body {
+        min-width: 375px;
+      }
+
+      a {
+        color: var(--dark-blue);
+        text-decoration: none;
+        transition: color 300ms ease;
+      }
+
+      a:hover {
+        color: white;
+      }
+
+      .text-dark-blue {
+        color: var(--dark-blue);
+      }
+
+      .text-light-blue {
+        color: var(--light-blue);
+      }
+
+      .bg-dark-blue {
+        background-color: var(--dark-blue);
+      }
+
+      .bg-light-blue {
+        background-color: var(--light-blue);
+      }
+
+      .btn-dark-blue {
+        color: white !important;
+        background-color: var(--dark-blue);
+      }
+
+      .banner {
+        background: url("https://gerenciador.fei.edu.br/Content/Arquivos/img/slide/slides2/civilm.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        color: white;
+        transition: height 300ms ease-in-out;
+      }
+
+      .banner .logo {
+        color: white;
+      }
+
+      .banner a {
+        font-size: 1.2em;
+        font-weight: 400;
+        color: white;
+        text-decoration: none;
+        transition: color 300ms ease;
+      }
+
+      .banner nav a:hover {
+        color: var(--light-blue);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="banner container-fluid py-4 pb-5 px-2">
+      <!-- Container -->
+      <div class="container py-2">
+        <!-- Navbar -->
+        <nav
+          class="d-flex flex-column flex-md-row align-items-md-center justify-content-between mb-4"
+        >
+          <h2 class="logo fs-2 fw-bold">
+            RP<span class="text-light-blue">Engenharia</span>
+          </h2>
+
+          <!-- Buttons -->
+          <div
+            class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-2 mt-2 mt-md-0"
+          >
+            <a href="#">Home</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Serviços</a>
+
+            <a
+              href="#"
+              class="btn btn-dark-blue rounded-pill ms-md-3 d-none d-md-block"
+              >Contrate agora</a
+            >
+          </div>
+        </nav>
+
+        <div class="">
+          <div class="ps-4 mb-5 h-100">
+            <p class="fs-5 fw-bold mb-1">Olá somos a</p>
+            <p class="display-2 fw-bold mb-1">
+              RP<span class="text-light-blue">Engenharia</span>
+            </p>
+            <p class="fs-5 fw-bold">
+              Temos a solução ideal para seus projetos e suas obras.
+            </p>
+          </div>
+
+          <form class="row mb-4">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  placeholder="Pesquise por projetos"
+                />
+                <div class="btn btn-dark-blue">Buscar</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="bg-light-blue">
+        <div class="container py-5">
+          <div class="row gap-4">
+            <div class="col-4 d-none d-md-block">
+              <div
+                id="carouselExampleInterval"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner rounded">
+                  <div class="carousel-item active" data-bs-interval="1000">
+                    <img
+                      src="img/insta-1.png"
+                      class="d-block w-100 shadow rounded"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="img/insta-2.png"
+                      class="d-block w-100 shadow rounded"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      src="img/insta-3.png"
+                      class="d-block w-100 shadow rounded"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleInterval"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleInterval"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="col">
+              <h1>Sobre nós</h1>
+              <div class="mb-3">
+                <a href="#">Construção</a> | <a href="#">Reforma</a> |
+                <a href="#">Projetos</a> | <a href="#">Acessoria</a> |
+                <a href="#">Consultoria</a>
+              </div>
+              <p class="fs-5 text-dark-blue">
+                Somos uma empresa de serviços de engenharia com a solução ideal
+                para seus projetos e suas obras, com a melhor qualidade,
+                economia e sem preocupação. Contrate-nos e realizaremos os seus
+                sonhos com exclusividade e maestria.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-dark-blue text-white">
+        <div class="container py-5">dasd</div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white">
+      <div class="container py-5">das</div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(".carousel").carousel();
+    </script>
+  </body>
+</html>
